@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 661px;
+    margin: 0 auto;
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+
+#text-field {
+    margin: 62px auto 0;
+    box-sizing: border-box;
+    padding-left: 13px;
+    padding-right: 13px;
+    height: 61px;
+    width:90%;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: left;
+}
+
+.autocomplete {
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0 auto 60px;
+    padding: 0;
+    width: 90%;
+    list-style: none;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: left;
+}
+
+.autocomplete li {
+
+    margin: 0;
+    padding: 0;
+    padding-left: 13px;
+    border: 2px solid #000;
+    height: 44px;
+    justify-self: center;
+    background-color: #E3E3E3;
+    cursor: pointer;
+}
+
+.autocomplete li:hover {
+    background-color: #65CDF9;
+}
+
+.autocomplete .clicked {
+    display: none;
+}
+
+.info-pinned {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0 auto 60px;
+    padding: 0;
+    width: 90%;
+    list-style: none;
+    font-size: 30px;
+    line-height: 35px;
+    cursor: pointer;
+
+}
+
+.info-pinned li {
+    padding: 8px 0 8px 13px;
+    position: relative;
+    border: 2px solid #000;
+    background-color: #E27BEB;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.close-button {
+    width: 46px;
+    height: 42px;
+    position: absolute;
+    right: 34px;
+    top:25%;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='46' height='42' fill='none'%3e%3cpath stroke='red' stroke-width='4' d='M2 40.5 44 2 M44 40.5 2 2'/%3e%3c/svg%3e ");
+}
+
+.close-button:hover {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='46' height='42' fill='none'%3e%3cpath stroke='blue' stroke-width='4' d='M2 40.5 44 2 M44 40.5 2 2'/%3e%3c/svg%3e ");
+    transform:  rotate(90deg);
+    transition: transform ease-in 0.5s;
+}
